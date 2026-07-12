@@ -1,0 +1,562 @@
+/*==============================
+    GOOGLE FONT
+==============================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*==============================
+    RESET
+==============================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #08121f;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/*==============================
+PARTICULAS
+==============================*/
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/*==============================
+NAVBAR
+==============================*/
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, .35);
+    transition: .4s;
+}
+
+nav {
+
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+
+}
+
+.logo {
+
+    font-size: 28px;
+    font-weight: bold;
+    color: #FFD700;
+
+}
+
+nav ul {
+
+    display: flex;
+    list-style: none;
+
+    gap: 25px;
+
+}
+
+nav a {
+
+    color: white;
+    text-decoration: none;
+    transition: .4s;
+
+}
+
+nav a:hover {
+
+    color: #FFD700;
+
+}
+
+/*==============================
+HERO
+==============================*/
+
+.hero {
+
+    width: 100%;
+    height: 100vh;
+
+    background: url(img/fond.png);
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    position: relative;
+
+}
+
+.hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, .60);
+
+}
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+.titulo {
+
+    font-size: 70px;
+
+    color: white;
+
+    animation: zoom 2s;
+
+}
+
+.hero p {
+
+    margin-top: 20px;
+
+    font-size: 24px;
+
+}
+
+.btn {
+
+    margin-top: 35px;
+
+    display: inline-block;
+
+    padding: 18px 40px;
+
+    background: #FFD700;
+
+    color: black;
+
+    border-radius: 40px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: .4s;
+
+}
+
+.btn:hover {
+
+    transform: scale(1.1);
+
+    background: white;
+
+}
+
+/*==============================
+SECCIONES
+==============================*/
+
+section {
+
+    padding: 120px 10%;
+
+}
+
+section h2 {
+
+    text-align: center;
+
+    font-size: 45px;
+
+    margin-bottom: 50px;
+
+    color: #FFD700;
+
+}
+
+/*==============================
+CARDS
+==============================*/
+
+.cards {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 40px;
+
+    flex-wrap: wrap;
+
+}
+
+.card {
+
+    width: 300px;
+
+    background: rgba(255, 255, 255, .08);
+
+    backdrop-filter: blur(12px);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    transition: .5s;
+
+    cursor: pointer;
+
+    box-shadow: 0 0 20px rgba(255, 255, 255, .15);
+
+}
+
+.card:hover {
+
+    transform: translateY(-20px);
+
+}
+
+.card img {
+
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+}
+
+.card h3 {
+
+    padding: 20px;
+
+    text-align: center;
+
+}
+
+/*==============================
+GALERIA
+==============================*/
+
+.galeria {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 25px;
+
+}
+
+.galeria img {
+
+    width: 100%;
+
+    border-radius: 20px;
+
+    transition: .5s;
+
+}
+
+.galeria img:hover {
+
+    transform: scale(1.1);
+
+}
+
+/*==============================
+CONTADORES
+==============================*/
+
+.contador {
+
+    display: flex;
+
+    justify-content: space-around;
+
+    flex-wrap: wrap;
+
+    gap: 40px;
+
+}
+
+.contador div {
+
+    text-align: center;
+
+}
+
+.numero {
+
+    font-size: 70px;
+
+    color: #FFD700;
+
+}
+
+/*==============================
+EQUIPOS
+==============================*/
+
+.equipos {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 25px;
+
+}
+
+.equipo {
+
+    background: #0c2037;
+
+    padding: 35px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    transition: .5s;
+
+    font-size: 22px;
+
+}
+
+.equipo:hover {
+
+    transform: scale(1.08);
+
+    background: #FFD700;
+
+    color: black;
+
+}
+
+/*==============================
+COUNTDOWN
+==============================*/
+
+.countdown {
+
+    text-align: center;
+
+}
+
+#reloj {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 35px;
+
+}
+
+#reloj div {
+
+    background: #0f2741;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    min-width: 140px;
+
+}
+
+#reloj span {
+
+    font-size: 50px;
+
+    color: #FFD700;
+
+}
+
+/*==============================
+FOOTER
+==============================*/
+
+footer {
+
+    background: #04070d;
+
+    padding: 60px;
+
+    text-align: center;
+
+}
+
+.redes {
+
+    margin-top: 20px;
+
+}
+
+.redes i {
+
+    font-size: 35px;
+
+    margin: 15px;
+
+    transition: .4s;
+
+    cursor: pointer;
+
+}
+
+.redes i:hover {
+
+    color: #FFD700;
+
+    transform: scale(1.3);
+
+}
+.redes a{
+    color:white;
+    text-decoration:none;
+}
+
+
+.redes a:hover{
+    color:#FFD700;
+}
+
+/*==============================
+BOTON SUBIR
+==============================*/
+
+#top {
+
+    position: fixed;
+
+    bottom: 30px;
+
+    right: 30px;
+
+    width: 55px;
+
+    height: 55px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #FFD700;
+
+    color: black;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    display: none;
+
+}
+
+/*==============================
+ANIMACIONES
+==============================*/
+
+@keyframes zoom {
+
+    from {
+
+        opacity: 0;
+
+        transform: scale(.5);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: scale(1);
+
+    }
+
+}
+
+/*==============================
+RESPONSIVE
+==============================*/
+
+@media(max-width:900px) {
+
+    nav {
+
+        flex-direction: column;
+
+    }
+
+    nav ul {
+
+        margin-top: 20px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+    }
+
+    .titulo {
+
+        font-size: 45px;
+
+    }
+
+    .hero p {
+
+        font-size: 18px;
+
+    }
+
+    section h2 {
+
+        font-size: 35px;
+
+    }
+
+    .card {
+
+        width: 100%;
+
+    }
+
+}
